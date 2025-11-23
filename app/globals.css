@@ -75,3 +75,9 @@ body {
 .swiper {
   margin: 0 !important;
 }
+
+/* Swiper bullets */
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullets,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullets {
+  @apply bg-accent
+}

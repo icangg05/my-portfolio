@@ -9,6 +9,7 @@ import Testimonial from "@/components/Testimonial";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import avatarImg from "@/public/assets/avatar.png";
 
 const About = () => {
   return (
@@ -25,7 +26,7 @@ const About = () => {
           {/* Img & social icons */}
           <div className="hidden xl:flex flex-col w-full h-full pt-14 max-w-[430px] relative">
             <Image
-              src="/assets/avatar.png"
+              src={avatarImg}
               alt="avatar.png"
               width={320}
               height={496}
