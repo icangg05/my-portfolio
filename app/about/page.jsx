@@ -1,6 +1,9 @@
 "use client";
+import Blob from "@/components/Blob";
 import Info from "@/components/Info";
 import Journey from "@/components/Journey";
+import Skills from "@/components/Skills";
+import Socials from "@/components/Socials";
 import Stats from "@/components/Stats";
 import Testimonial from "@/components/Testimonial";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -20,8 +23,26 @@ const About = () => {
       <div className="container mx-auto px-0">
         <div className="flex flex-col xl:flex-row items-center gap-24 w-full h-[680px]">
           {/* Img & social icons */}
-          <div className="hidden xl:flex w-full h-full pt-14 max-w-[430px] relative bg-pink-50/10">
-            1
+          <div className="hidden xl:flex flex-col w-full h-full pt-14 max-w-[430px] relative">
+            <Image
+              src="/assets/avatar.png"
+              alt="avatar.png"
+              width={320}
+              height={496}
+              className="z-20 relative"
+            />
+            {/* Overlay */}
+            <div className="w-full h-[60px] absolute left-0 top-[420px] right-0 bg-linear-to-t from-primary via-primary/90 z-30"></div>
+
+            {/* Blob */}
+            <div className="absolute top-20 -left-20 z-10">
+              <Blob containerStyles="w-[420px] h-[420px]" />
+            </div>
+
+            <Socials
+              containerStyles="flex gap-4 z-40 w-max transform translate-x-[30px]"
+              iconStyles="w-[40px] h-[40px] text-[22px] text-accent hover:text-accent-hover transition-all flex items-center justify-center rounded-full cursor-pointer"
+            />
           </div>
           {/* Scroll area */}
           <ScrollArea className="w-full h-[680px]">
@@ -42,10 +63,10 @@ const About = () => {
 
               <div className="flex flex-col items-start gap-16">
                 <Stats />
-                <Testimonial /> 
+                <Testimonial />
                 <Info />
                 <Journey />
-                <div>skills</div>
+                <Skills />
               </div>
             </div>
           </ScrollArea>
