@@ -1,4 +1,6 @@
 "use client";
+import Info from "@/components/Info";
+import Journey from "@/components/Journey";
 import Stats from "@/components/Stats";
 import Testimonial from "@/components/Testimonial";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -41,8 +43,8 @@ const About = () => {
               <div className="flex flex-col items-start gap-16">
                 <Stats />
                 <Testimonial /> 
-                <div>info</div>
-                <div>journey</div>
+                <Info />
+                <Journey />
                 <div>skills</div>
               </div>
             </div>
