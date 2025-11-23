@@ -12,7 +12,7 @@ const socials = [
   },
   {
     icon: <BiLogoInstagramAlt />,
-    path: "https://www.instagram.com/ilmifaizan1112/",
+    path: "https://www.instagram.com/ilmifaizan_/",
   },
   {
     icon: <BiLogoGithub />,
@@ -29,9 +29,9 @@ const Socials = ({ containerStyles, iconStyles }) => {
     <div className={containerStyles}>
       {socials.map((item, index) => {
         return (
-          <div key={index} className={iconStyles}>
+          <a href={item.path} target="_blank" key={index} className={iconStyles}>
             {item.icon}
-          </div>
+          </a>
         );
       })}
     </div>
