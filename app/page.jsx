@@ -7,6 +7,8 @@ import { HiOutlinePhone, HiOutlineMail } from "react-icons/hi";
 
 import Image from "next/image";
 import avatarImg from "@/public/assets/avatar.png";
+import Socials from "@/components/Socials";
+import Pattern from "@/components/Pattern";
 
 const Home = () => {
   return (
@@ -18,6 +20,8 @@ const Home = () => {
       }}
       className="h-screen flex items-center"
     >
+      {/* Pattern */}
+      <Pattern />
       <div className="flex flex-col xl:flex-row items-center justify-between w-full">
         {/* Text */}
         <div className="w-full xl:w-[550px] flex flex-col items-center xl:items-start text-center xl:text-left">
@@ -44,7 +48,7 @@ const Home = () => {
             </div>
           </button>
           {/* Contact info */}
-          <div className="flex flex-col xl:flex-row xl:items-center gap-4 xl:gap-8">
+          <div className="flex flex-col xl:flex-row xl:items-center gap-4 xl:gap-8 mb-12 xl:mb-0">
             {/* Phone */}
             <div className="flex items-center gap-4 text-lg">
               <span className="text-accent">
@@ -61,6 +65,10 @@ const Home = () => {
             </div>
           </div>
           {/* Socials */}
+          <Socials
+            containerStyles="flex 2xl:flex-col gap-6 xl:hidden 2xl:flex 2xl:absolute 2xl:top-1/2 2xl:right-2 2xl:transform 2xl:-translate-x-1/2 2xl:-translate-y-1/2"
+            iconStyles="bg-accent text-white hover:bg-accent-hover transition w-[48px] h-[48px] text-[22px] flex items-center justify-center rounded-full cursor-pointer"
+          />
         </div>
 
         {/* Blob & image */}
