@@ -42,7 +42,7 @@ const Header = () => {
               <div>
                 <a
                   href="/assets/Ilmi-Faizan-CV.pdf"
-                  target="_blank"
+                  download="Ilmi-Faizan-CV.pdf"
                   className="btn btn-lg btn-tertiary mb-16"
                 >
                   <div className="flex items-center gap-3">
