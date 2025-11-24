@@ -33,7 +33,7 @@ const About = () => {
               className="z-20 relative"
             />
             {/* Overlay */}
-            <div className="w-full h-[60px] absolute left-0 top-[420px] right-0 bg-linear-to-t from-primary via-primary/90 z-30"></div>
+            <div className="w-full h-60 absolute -left-[30px] top-[270px] right-0 bg-linear-to-t from-primary via-primary/90 z-30"></div>
 
             {/* Blob */}
             <div className="absolute top-20 -left-20 z-10">

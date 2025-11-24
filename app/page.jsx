@@ -82,10 +82,10 @@ const Home = () => {
             width={440}
             height={600}
             quality={[100, 75]}
-            className="absolute -top-16 left-[120px]"
+            className="absolute -top-16 left-[90px]"
           />
           {/* Overlay gradient */}
-          <div className="w-full h-[164px] absolute bottom-0 left-0 right-0 bg-linear-to-t from-primary via-primary/90 to-primary/40"></div>
+          <div className="w-full h-[220px] absolute bottom-0 left-0 right-0 bg-linear-to-t from-primary/90 via-primary/90 to-primary/40"></div>
         </div>
       </div>
     </motion.section>

@@ -9,19 +9,17 @@ import { ImQuotesLeft } from "react-icons/im";
 
 const testimonial = [
   {
-    message:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quod?",
-    name: "Ilmi Faizan",
+    message: "Code is like humor. When you have to explain it, it’s bad.",
+    name: "Cory House",
+  },
+  {
+    message: "First, solve the problem. Then, write the code.",
+    name: "John Johnson",
   },
   {
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quod?",
-    name: "Imam Saputra",
-  },
-  {
-    message:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quod?",
-    name: "Nur Afdhaliyah",
+      "Programs must be written for people to read, and only incidentally for machines to execute.",
+    name: "Harold Abelson",
   },
 ];
 
@@ -40,7 +38,9 @@ const Testimonial = () => {
               <ImQuotesLeft className="hidden xl:flex text-8xl text-accent" />
               <div className="flex flex-col gap-2">
                 <p>{item.message}</p>
-                <p className="self-end text-accent font-semibold">{item.name}</p>
+                <p className="self-end text-accent font-semibold">
+                  {item.name}
+                </p>
               </div>
             </div>
           </SwiperSlide>

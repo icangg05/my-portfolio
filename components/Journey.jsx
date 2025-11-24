@@ -5,6 +5,11 @@ const journey = [
     institution: "Dinas Komunikasi dan Informatika, Kendari City",
   },
   {
+    years: "Jan, 2023 - Feb, 2024",
+    role: "Member of the Research and Technology Department",
+    institution: "Himpunan Mahasiswa Teknik Informatika FT-UHO, Kendari City",
+  },
+  {
     years: "Jan, 2022 - Feb, 2022",
     role: "Programmer Intern",
     institution: "Badan Kependudukan dan Keluarga Berencana Nasional (BKKBN), Kendari City",

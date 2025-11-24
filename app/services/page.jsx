@@ -9,11 +9,6 @@ import { MdOutlineArrowOutward, MdArrowRightAlt } from "react-icons/md";
 
 const services = [
   {
-    icon: "/assets/services/design.svg",
-    href: "",
-    title: "Website Interface Design",
-  },
-  {
     icon: "/assets/services/frontend.svg",
     href: "",
     title: "Frontend Development",
@@ -24,14 +19,24 @@ const services = [
     title: "Backend Development",
   },
   {
-    icon: "/assets/services/seo.svg",
+    icon: "/assets/services/webapp.svg",
     href: "",
-    title: "Search Engine Optimization",
+    title: "Web Application Development",
   },
   {
-    icon: "/assets/services/video.svg",
+    icon: "/assets/services/maintenance.svg",
     href: "",
-    title: "Video Production",
+    title: "Website Maintenance & Optimization",
+  },
+  {
+    icon: "/assets/services/system.svg",
+    href: "",
+    title: "Information System Development",
+  },
+  {
+    icon: "/assets/services/seo.svg",
+    href: "",
+    title: "Search Engine Optimization (SEO)",
   },
 ];
 
@@ -83,7 +88,9 @@ const Services = () => {
                       <MdOutlineArrowOutward />
                     </div>
                   </div>
-                  <h5 className="text-[22px] font-medium max-w-60">{item.title}</h5>
+                  <h5 className="text-[22px] font-medium max-w-60">
+                    {item.title}
+                  </h5>
                 </div>
               </SwiperSlide>
             );

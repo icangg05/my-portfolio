@@ -4,8 +4,15 @@ import {
   RiHtml5Fill,
   RiCss3Fill,
   RiTailwindCssFill,
-  RiNodejsFill,
+  RiBootstrapFill,
+  RiPhpFill,
+  RiVuejsFill,
+  RiJavascriptFill,
 } from "react-icons/ri";
+
+import { FaLaravel } from "react-icons/fa";
+import { TbBrandMysql } from "react-icons/tb";
+import { GrMysql } from "react-icons/gr";
 
 import {
   Tooltip,
@@ -16,12 +23,28 @@ import {
 
 const skills = [
   {
-    icon: <RiReactjsFill />,
-    name: "React.js",
+    icon: <FaLaravel />,
+    name: "Laravel",
   },
   {
     icon: <RiNextjsFill />,
     name: "Next.js",
+  },
+  {
+    icon: <RiReactjsFill />,
+    name: "React.js",
+  },
+  {
+    icon: <RiVuejsFill />,
+    name: "Vue.js",
+  },
+  {
+    icon: <RiTailwindCssFill />,
+    name: "Tailwind CSS",
+  },
+  {
+    icon: <RiBootstrapFill />,
+    name: "Bootstrap",
   },
   {
     icon: <RiHtml5Fill />,
@@ -32,12 +55,16 @@ const skills = [
     name: "CSS 3",
   },
   {
-    icon: <RiTailwindCssFill />,
-    name: "Tailwind CSS",
+    icon: <RiJavascriptFill />,
+    name: "JavaScript",
   },
   {
-    icon: <RiNodejsFill />,
-    name: "Node.js",
+    icon: <RiPhpFill />,
+    name: "PHP",
+  },
+  {
+    icon: <GrMysql />,
+    name: "MySQL",
   },
 ];
 
@@ -53,7 +80,9 @@ const Skills = () => {
             <TooltipProvider key={index}>
               <Tooltip>
                 <TooltipTrigger className="w-16 h-16 rounded-full flex items-center justify-center bg-tertiary/70 group">
-                  <div className="text-3xl group-hover:text-accent transition-all duration-300">{item.icon}</div>
+                  <div className="text-3xl group-hover:text-accent transition-all duration-300">
+                    {item.icon}
+                  </div>
                 </TooltipTrigger>
                 <TooltipContent>
                   <p className="text-lg">{item.name}</p>
