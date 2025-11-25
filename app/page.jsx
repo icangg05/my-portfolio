@@ -9,6 +9,7 @@ import Image from "next/image";
 import avatarImg from "@/public/assets/avatar.png";
 import Socials from "@/components/Socials";
 import Pattern from "@/components/Pattern";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -41,12 +42,12 @@ const Home = () => {
             building information systems using HTML, CSS, JavaScript, and PHP
             services.
           </p>
-          <button className="btn btn-lg btn-accent mb-16">
+          <Link href="/contact" className="btn btn-lg btn-accent mb-16">
             <div className="flex items-center gap-3">
               <span>Let's talk.</span>
               <MdArrowOutward className="text-xl" />
             </div>
-          </button>
+          </Link>
           {/* Contact info */}
           <div className="flex flex-col xl:flex-row xl:items-center gap-4 xl:gap-8 mb-12 xl:mb-0">
             {/* Phone */}

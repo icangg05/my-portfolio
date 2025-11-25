@@ -34,7 +34,7 @@ const projects = [
     title: "Halu Oleo University Public Information Service",
     description:
       "The official public information service website of Halu Oleo University, built in compliance with PPID transparency standards",
-    image: "/assets/work/chatina-ai.png",
+    image: "/assets/work/ppid-uho.png",
     link: "https://ppid.uho.ac.id/",
     github: "#",
     tech: ["Laravel Inertia", "React.js", "MySQL"],
@@ -59,7 +59,7 @@ const projects = [
     image: "/assets/work/chatina-ai.png",
     link: "https://chatina.kendarikota.go.id/",
     github: "#",
-    tech: ["React.js", "Tailwind CSS"],
+    tech: ["React.js", "Tailwind CSS", "Google Gemini AI"],
   },
   {
     id: 5,
@@ -67,7 +67,7 @@ const projects = [
     title: "rekomU: Sistem Rekomendasi Produk UMKM",
     description:
       "A product recommendation website for local MSMEs in Kolaka using user-based collaborative filtering to predict user ratings",
-    image: "/assets/work/kendari-portal.png",
+    image: "/assets/work/rekomu.png",
     link: "https://rekomu.ilmifaizan.site/",
     github: "#",
     tech: ["Laravel", "Bootstrap", "MySQL"],
@@ -78,7 +78,7 @@ const projects = [
     title: "Sinora: Sistem Informasi Notulensi Rapat",
     description:
       "Meeting minutes system used to monitor meeting schedules and record meeting results",
-    image: "/assets/work/si-perfect.png",
+    image: "/assets/work/sinora.png",
     link: "https://sinora.ilmifaizan.site/",
     github: "#",
     tech: ["Laravel", "Bootstrap", "MySQL"],
@@ -89,7 +89,7 @@ const projects = [
     title: "TK Dharma Mulya Information System",
     description:
       "Comprehensive information system featuring school website portal and integrated online admission (PPDB) registration module",
-    image: "/assets/work/chatina-ai.png",
+    image: "/assets/work/tkdharmamulya.png",
     link: "https://thdharma.ilmifaizan.site/",
     github: "#",
     tech: ["Laravel", "Bootstrap", "MySQL"],
@@ -100,7 +100,7 @@ const projects = [
     title: "QuizyApp",
     description:
       "Online practice platform for CPNS/PPPK SKB tests with automatic scoring",
-    image: "/assets/work/kendari-portal.png",
+    image: "/assets/work/quizyapp.png",
     link: "https://quizy-one.vercel.app/",
     github: "#",
     tech: ["Next.js", "Tailwind CSS", "MongoDB"],
@@ -111,14 +111,14 @@ const projects = [
     title: "SultraSpot Tourism Website",
     description:
       "Tourism and event ticket booking website for Southeast Sulawesi with integrated online payment system",
-    image: "/assets/work/si-perfect.png",
+    image: "/assets/work/sultraspot.png",
     link: "#",
     github: "#",
-    tech: ["Laravel", "Bootstrap", "MySQL", "Payment Gateway"],
+    tech: ["Laravel", "Bootstrap", "MySQL"],
   },
 ];
 
-const categories = ["fullstack","frontend"];
+const categories = ["fullstack", "frontend"];
 
 const Work = () => {
   return (
@@ -175,7 +175,9 @@ const Work = () => {
                                 {/* Title */}
                                 <h3 className="h3">{project.title}</h3>
                                 {/* Description */}
-                                <p className="max-w-[540px]">{project.description}</p>
+                                <p className="max-w-[540px]">
+                                  {project.description}
+                                </p>
                                 {/* Tech */}
                                 <div className="xl:mb-4 max-w-[300px] min-h-[130px]">
                                   <p className="mb-4">Technologies Used</p>
